@@ -3,13 +3,11 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator, array_to_img 
 from tensorflow.keras.models import load_model
-import os
 from skimage.io import imread
 from skimage.transform import resize
 from tensorflow.image import psnr
 from tensorflow.keras.optimizers import Adam
 import EAM_layer
-from PIL import Image
 
 def PSNR(y_true, y_pred): 
   score = tf.image.psnr(y_true, y_pred, 1)
