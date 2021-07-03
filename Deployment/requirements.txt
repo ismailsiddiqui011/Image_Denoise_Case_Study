@@ -1,5 +1,0 @@
-numpy
-streamlit 
-tensorflow 
-scikit-image
-Cython
